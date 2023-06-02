@@ -1,13 +1,13 @@
 @media(max-width:768px){
 	
 .d-sm-none{display:none;
-}
-
+	}
+.d-sm-block{display:block;}
 
 .col1-sm-12{
 			width:100%;
 			
-}
+	}
 
 .order{	order:2;
 		margin-top:20px;

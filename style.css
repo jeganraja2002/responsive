@@ -2,11 +2,26 @@
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
-	/* font-family: 'Raleway', sans-serif; */
 	font-family: 'Kurale', serif;
 	}
 
-.header{
+
+.fixed{
+	position:fixed;
+	bottom:30px;
+	right:20px;
+	background-color:#5fcf80;
+	height:50px;
+	width:50px;
+	border-radius:50px;
+	text-align:center;
+	line-height:48px;
+	font-size:20px;
+	}
+
+.fixed a{color:white;}
+
+#header{
 		position:sticky;
 		top:0px;
 		padding:20px 0px;
@@ -47,32 +62,48 @@
 	}
 	
 
+.menu{display:flex;
+	line-height:45px;
+	justify-content:end;
+	font-size:20px;
+	padding-left:10px;
+	display:none;
+	color:gray
+	}
+
 	
 .row1 a{
 		text-decoration:none;
 		color:black;	
-		padding:0px 15px;
+		padding:10px 15px;
 		display:inline-block;
 		
 		}
 		
 .row1 li {
 		list-style:none;
-		font-size:17px;
+		font-size:16px;
 		}
 		
 .btn a{
 	border:1px solid none;
-	padding:10px 24px;
+	padding:9px 24px;
 	border-radius:50px;
 	background-color:#5fcf80;
 	color:white;
-}
+	display:inline-block;
+	}
 
 			
 .relative{
 	position:relative;
 	}
+	
+	
+.relative a:hover i{
+		transform:rotate(360deg);
+		transition:all 0.3s ease-in;
+		}
 
 
 .absolute{
@@ -81,12 +112,14 @@
 	left:15px;
 	width:180px;
 	background-color:white;
-	padding:10px 10px;
-	line-height:35px;
+	padding:0px 10px;
+	line-height:20px;
 	box-shadow:0px 0px 20px #d3d3d338;
 	visibility:hidden;
+	opacity:0;
 	transition:all 0.2s ease-in;
 	/* transform:translatey(30px) */
+	border-radius:5px;
 	}
 
 
@@ -94,8 +127,10 @@
 
 .relative:hover .absolute{
 	visibility:visible;
+	opacity:1;
 	top:40px;
 	transition:all 0.2s ease-in;	
+	box-shadow:0px 0px 20px #d3d3d338;;
 	}
 
 
@@ -108,10 +143,13 @@
 	position:absolute;
 	top:0px;
 	left:-180px;
-	background-color:ghostwhite;
+	background-color:white;
 	width:190px;
-	box-shadow:0px 0px 20px lightgray;
+	line-height:20px;
+	border-radius:5px;
+	box-shadow:0px 0px 20px #0000003d;
 	visibility:hidden;
+	opacity:0;
 	/* z-index:-1; */
 	transition:all 0.2s ease-in;
 	}
@@ -121,23 +159,14 @@
 .relative1:hover .absolute1{
 	visibility:visible;
 	top:0px;
+	opacity:1;
 	left:-200px;
 	transition:all 0.2s ease-in;	
 	}
 
 
 
-
-
-
-
-
-
-
-
 .absolute li:hover{color:limegreen;}
-
-
 
 
 			
@@ -157,26 +186,11 @@
 		}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* next section 1 */
 
 
 
-.section{
+#section{
 	background:linear-gradient(#00000050,#00000050),url("hero.jpg");
 	background-attachment:fixed;
 	background-position:top;
@@ -350,7 +364,7 @@
 
 .whymentor1 {
 		text-align:center;
-		border:1px solid lightgray;
+		border:1px solid #eef0ef;
 		padding:50px 30px;
 		}
 
@@ -401,7 +415,7 @@
 
 
 .icons{
-	border:1px solid lightgray;
+	border:1px solid #eef0ef;
 	padding:20px 40px;
 	margin-bottom:20px;
 	transition:all 0.3s ease-in;
@@ -537,8 +551,8 @@
 
 		
 .border1{
-		border:1px solid lightgray;
-		min-height:555px;
+		border:1px solid #eef0ef;
+		/* min-height:555px; */
 			}
 		
 		
@@ -638,7 +652,7 @@
 
 .section4{padding:80px 0px;}
 
-.border2{border:1px solid lightgray;
+.border2{border:1px solid #eef0ef;
 		/* max-width:385px; */
 	}
 
